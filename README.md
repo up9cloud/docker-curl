@@ -15,7 +15,11 @@ docker run --rm sstc/curl -v https://google.com
 - post
 
 ```sh
-docker run --rm sstc/curl -v -XPOST --header 'Content-Type: application/json' -d '{"hello":"world"}' https://example.com
+docker run --rm \
+sstc/curl -v \
+-XPOST \
+--header 'Content-Type: application/json' \
+-d '{"hello":"world"}' https://example.com
 ```
 
 ## License
